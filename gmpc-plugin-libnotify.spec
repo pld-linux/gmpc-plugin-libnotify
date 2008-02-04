@@ -13,6 +13,7 @@ Group:		X11/Applications/Sound
 Source0:	http://download.sarine.nl/gmpc-0.15.5/%{source_name}-%{version}.tar.gz
 # Source0-md5:	5782f07ce1740a1fe6c2feff2a9a66ee
 Patch0:		%{name}-plugins_path.patch
+Patch1:		%{name}-API.patch
 URL:		http://www.sarine.nl//gmpc-plugins
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,6 +36,7 @@ przykład "Gatunek zawiera 'jazz' i wykonawca nie zawiera 'Jones'".
 %prep
 %setup -qn %{source_name}-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
