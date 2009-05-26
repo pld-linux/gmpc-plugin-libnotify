@@ -17,6 +17,7 @@ BuildRequires:	gtk+2-devel >= 2:2.8.0
 BuildRequires:	libmpd-devel >= 0.18.0
 BuildRequires:	libnotify-devel
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 Requires:	gmpc >= 0.17.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
