@@ -2,19 +2,19 @@
 Summary:	Libnotify plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka libnotify dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-libnotify
-Version:	0.18.0
+Version:	0.18.100
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
-# Source0-md5:	eb2e9b8e0ef027095ae378e882c5aef0
-URL:		http://gmpcwiki.sarine.nl/index.php?title=Libnotify
+# Source0-md5:	59039ac65eca640c7d74ba59404bbf14
+URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_LIBNOTIFY
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake
 BuildRequires:	glib2-devel >= 1:2.10.0
-BuildRequires:	gmpc-devel >= 0.18.0
+BuildRequires:	gmpc-devel >= 0.18.100
 BuildRequires:	gtk+2-devel >= 2:2.8.0
-BuildRequires:	libmpd-devel >= 0.18.0
+BuildRequires:	libmpd-devel >= 0.18.100
 BuildRequires:	libnotify-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
