@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://downloads.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
 # Source0-md5:	c728ac2deb5aa7e8ffad430690527ab4
+Patch0:		%{name}-libnotify.patch
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_LIBNOTIFY
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake
@@ -32,6 +33,7 @@ utworu.
 
 %prep
 %setup -qn %{source_name}-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
